@@ -1,0 +1,8 @@
+{
+  "name": "ops-toolkit",
+  "version": "1.0.0",
+  "description": "Six small browser tools for automation work. No build step, no dependencies.",
+  "main": "tools.js",
+  "scripts": { "test": "node -e \"const{TOOLS}=require('./tools.js');let f=0;for(const t of TOOLS){try{const r=t.run(t.sample);if(!r||!r.html)throw new Error('no output');console.log('PASS '+t.name)}catch(e){console.log('FAIL '+t.name+': '+e.message);f++}}process.exit(f)\"" },
+  "license": "MIT"
+}
