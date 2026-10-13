@@ -112,7 +112,7 @@
 <script src="tools.js"></script>
 <script>
 const $ = id => document.getElementById(id)
-const TOOLS = window.OPS_TOOLS
+// tools.js declares TOOLS globally above - re-declaring it here would be a syntax error
 let current = TOOLS[0]
 
 // build the tab bar
